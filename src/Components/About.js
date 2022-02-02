@@ -25,10 +25,10 @@ class About extends Component {
          </div>
          <div className="seven columns main-col">
             <div class="about-text">
-            <h1>About Me</h1>
+            <h1>About Me</h1><br />
             <p class="text">{bio}</p>   
             <br />
-            <button class="btn" href="#resume">Download Resume</button>
+            <button class="btn" href="https://drive.google.com/file/d/1KLGwoUn9cHL8Gvkp226xAXo9tx-Elwxf/view?usp=sharing">Download Resume</button>
             </div>
             </div>
          </div>

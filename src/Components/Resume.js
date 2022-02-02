@@ -145,7 +145,7 @@ class Resume extends Component {
       If you are hiring or are willing to collaborate with me on any project, please keep a copy of my latest resume for reference and feel free to contact me through my mentioned Contact Number 
       or any of my Social Media Handles. </p>
       <img class="resume-image" src="./images/resume.png" />
-        <a href="" className="button"><i className="fa fa-download"></i>&nbsp; Download Resume</a>
+        <a href="https://drive.google.com/file/d/1KLGwoUn9cHL8Gvkp226xAXo9tx-Elwxf/view?usp=sharing" className="button"><i className="fa fa-download"></i>&nbsp; Download Resume</a>
       </div>
     </section>
 
