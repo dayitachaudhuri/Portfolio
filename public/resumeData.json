@@ -1,0 +1,184 @@
+{
+  "main": {
+    "name": "Dayita Chaudhuri",
+    "occupation": "technology enthusiast",
+    "description": "I am a Second-Year CSE Undergrad and a full stack web developer. I use React, Angular and Django frameworks to develop pages. This is my resume. Feel free to check it out and leave me your opinion through the contact section.",
+    "image": "profilepic.jpg",
+    "bio": "Full Stack Web-Developer and Software Developer with a passion for thoughtful UI/UX and collaboration. I am familiar with a variety of frameworks frameworks. Currently working on Machine Learning and AI. My primary goal is to make products that will make a difference.",
+    "contactmessage": "Are you interested n working with me, or do you just wanna meet up for some chitchat? I love meeting and working with new people. Hit me up through the form below.",
+    "email": "dayitachaudhuri.tech@gmail.com",
+    "phone": "+91 7005485912",
+    "github":"https://github.com/dayitachaudhuri",
+    "project":"https://github.com/dayitachaudhuri/react-portfolio",
+    "address":{
+      "street":"18 - TG Road, Kerchowmohani, Krishnanagar",
+      "city":"Agartala",
+      "state":"Tripura",
+      "zip": "799001"
+    },
+    "website": "/",
+    "resumedownload": "/",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://www.facebook.com/dayita.chaudhuri.3",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"twitter",
+        "url":"https://twitter.com/doyitach",
+        "className":"fa fa-twitter"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/dayita-chaudhuri",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"http://instagram.com/doyit_aaaa",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/dayitachaudhuri",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education":[
+      {
+        "school":"National Institute of Technology, Agartala",
+        "degree":"Bachelor of Technology in Computer Science and Engineering",
+        "graduated":"December 2020 to November 2024 (Expected)"
+      },
+      {
+        "school":"Kendriya Vidyalaya No.1 Kunjaban, Agartala",
+        "degree":"AISSCE with PCM+CS",
+        "graduated":"May 2020"
+      },
+      {
+        "school":"Kendriya Vidyalaya No.1 Kunjaban, Agartala",
+        "degree":"AISCE",
+        "graduated":"May 2018"
+      }
+    ],
+    "work": [
+      {
+        "company": "Infinity Foundation",
+        "title": "Web Developement Intern",
+        "years": "December 2021 - Present",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"80%"
+      },
+      {
+        "name":"C/C++",
+        "level":"50%"
+      },
+      {
+        "name":"JavaScript",
+        "level":"50%"
+      },
+      {
+        "name":"HTML/CSS",
+        "level":"90%"
+      }
+    ],
+    "frameworks":[
+      {
+        "name":"Django",
+        "logo":"./images/django.png",
+        "level":"80%"
+      },
+      {
+        "name":"ReactJS",
+        "logo":"./images/react.png",
+        "level":"50%"
+      },
+      {
+        "name":"Angular",
+        "logo":"./images/angular.png",
+        "level":"50%"
+      },
+      {
+        "name":"NodeJS",
+        "logo":"./images/node.png",
+        "level":"90%"
+      }
+    ],
+    "tools":[
+      {
+        "name":"Github",
+        "logo":"./images/github.png",
+        "level":"80%"
+      },
+      {
+        "name":"Visual Studio Code",
+        "logo":"./images/vsc.png",
+        "level":"50%"
+      },
+      {
+        "name":"Google Cloud Platform",
+        "logo":"./images/cloud.png",
+        "level":"50%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Portfolio Website in ReactJS",
+        "technologies":"HTML/CSS, Javascript, ReactJS",
+        "category":"Portfolio website containing relevant information and a contact form",
+        "image":"01.jpg",
+        "url":"https://github.com/dayitachaudhuri/Bookarazzi/"
+      },
+      {
+        "title":"Portfolio Website in Django",
+        "technologies":"Python, HTML/CSS, Javascript, Django",
+        "category":"Portfolio website containing relevant information and a contact form",
+        "image":"02.jpg",
+        "url":"https://github.com/dayitachaudhuri/Bookarazzi/"
+      },
+      {
+        "title":"e-Commerce Website",
+        "technologies":"Python, HTML/CSS, Javascript, Django",
+        "category":"• Developed a working shopping website with an updated catalogue and shopping cart, using Django.\n• Technologies used were Python, HTML, CSS, Bootstrap and Javascript.\n• Backend was handled through Django admin",
+        "image":"03.jpg",
+        "url":"https://github.com/dayitachaudhuri/Bookarazzi/"
+      },
+      {
+        "title":"Minesweeper Game in Python",
+        "technologies":"Python",
+        "category":"• Developed his game works like any traditional minesweeper game, with three difficulty levels and two modes - single player and multiplayer.\n• It has very strong exception handling capabilities.",
+        "image":"04.jpg",
+        "url":"https://github.com/dayitachaudhuri/Bookarazz/i"
+      },
+      {
+        "title":"Official Website for DCC-NITA",
+        "technologies":"HTML/CSS, Javascript, ReactJS",
+        "category":"• Worked with the team of DCC NITA to build and launch the official website.\n• Handled the frontend using ReactJS.",
+        "image":"05.jpg",
+        "url":"https://dccnita.herokuapp.com/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user": "Kareem Abdul Jabbar"
+      },
+      {
+        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}
