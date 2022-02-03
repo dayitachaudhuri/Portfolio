@@ -28,7 +28,8 @@ class About extends Component {
             <h1>About Me</h1><br />
             <p class="text">{bio}</p>   
             <br />
-            <button class="btn" href="https://drive.google.com/file/d/1KLGwoUn9cHL8Gvkp226xAXo9tx-Elwxf/view?usp=sharing">Download Resume</button>
+            <button href="https://drive.google.com/file/d/1KLGwoUn9cHL8Gvkp226xAXo9tx-Elwxf/view?usp=sharing" class="btn" >
+            <a href="https://drive.google.com/file/d/1KLGwoUn9cHL8Gvkp226xAXo9tx-Elwxf/view?usp=sharing" >Download Resume</a></button>
             </div>
             </div>
          </div>
