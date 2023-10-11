@@ -6,9 +6,6 @@ class Header extends Component {
 
     if(this.props.data){
       var name = this.props.data.name;
-      var occupation= this.props.data.occupation;
-      var description= this.props.data.description;
-      var city= this.props.data.address.city;
       var networks= this.props.data.social.map(function(network){
         return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
       })
@@ -87,12 +84,12 @@ class Header extends Component {
 
       <div className="banner">
          <div className="banner-text">
-            <h1 className="responsive-headline">{name}.</h1>
+            <h1>{name}.</h1>
             <p class="typewriter">I am a &nbsp;
             <span
             class="txt-rotate"
             data-period="2000"
-            data-rotate='[ "Learner.", "Programmer.", "Web Developer.", "Poet.", "Nerd.", "Amazing Person!" ]'></span></p>
+            data-rotate='["Programmer.", "Learner.", "Software Developer.", "Poet.", "Nerd.", "Amazing Person!" ]'></span></p>
             <hr />
             <br /><br /><br />
             <ul className="social">

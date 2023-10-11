@@ -18,6 +18,10 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
+:root {
+   --primary-color: coral;
+ }
+
 body { background: #ffffff; }
 
 /* ------------------------------------------------------------------ */
@@ -31,7 +35,7 @@ header {
    text-align: center;
    overflow: hidden;
    animation: scroll 70s linear infinite;
-   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+   background: url("https://source.unsplash.com/uhjiu8FjnsQ"), #111111;
    color: #eee;
    display: flex;
    align-items: center;
@@ -56,10 +60,10 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 48px 'dosis', sans-serif;
+   font: 60px/1.1em 'opensans-bold', sans-serif;
    color: rgb(255, 255, 255);
    letter-spacing: -2px;
-   margin: 0 auto 18px auto;
+   margin: 80px auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
@@ -239,22 +243,31 @@ ul#nav li.current a { color: #f000c8; }
 
 .photo_frame{
    position: relative;
-   border: 8px solid;
-   height: 64vh;
+   border: 4px solid;
+   height: 44vh;
+   width: 44vh;
    border-radius: 10px;
-   border-color: rgba(0, 0, 0, 0.623);
+   border-color: #333;
+   background-color: #333;
+   margin: 20% 0;
  }
  
  .photo_frame .photo{
-   width: 100%;
-   height: 60vh;
+   height: 44vh;
    object-fit: cover;
    position: absolute;
    left: 3vw;
    bottom: 5vh;
    z-index: 1;
    border-radius: 10px;
+   transition-duration: 1s;
  } 
+
+ .photo_frame .photo:hover{
+   left: 1vw;
+   bottom: 2vh;
+   transition-duration: 1s;
+ }
 
 #about a, #about a:visited  { color: #fff; }
 #about a:hover, #about a:focus { color: #11ABB0; }
@@ -278,15 +291,13 @@ ul#nav li.current a { color: #f000c8; }
 #about .main-col { padding-right: 5%; }
 
 #about .about-text {
-   padding-left:20%;
-   margin-top:20%;
    text-align: justify;
 }
 
 #about .about-text h1 {
    color:white;
-   text-shadow: 0 13.36px 8.896px #2c482e, 0 -2px 1px #aeffb4;
    letter-spacing: -2px;
+   margin-bottom: 10px;
 }
 
 #about .about-text .text {
@@ -310,6 +321,24 @@ ul#nav li.current a { color: #f000c8; }
    border-bottom: none;
  }
 
+ .wave {
+   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+   animation-duration: 2.5s;        /* Change to speed up or slow down */
+   animation-iteration-count: infinite;  /* Never stop waving :) */
+   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+   display: inline-block;
+ }
+ 
+ @keyframes wave-animation {
+     0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+   100% { transform: rotate( 0.0deg) }
+ }
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -862,7 +891,7 @@ ul#nav li.current a { color: #f000c8; }
     margin: 0 6px;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 .flex-control-paging li a {
     width: 12px;
@@ -1106,3 +1135,109 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+/*==================================
+    TIMELINE
+==================================*/
+
+    /*-- GENERAL STYLES
+    ------------------------------*/
+    .timeline {
+      line-height: 1.4em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+   .timeline h1, h2, h3, h4, h5, h6 {
+      line-height: inherit;
+   }
+
+  /*----- TIMELINE ITEM -----*/
+
+  .timeline-item {
+      padding-left: 40px;
+      position: relative;
+  }
+  .timeline-item:last-child {
+      padding-bottom: 0;
+   }
+
+  /*----- TIMELINE INFO -----*/
+
+  .timeline-info {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin: 0 0 .5em 0;
+      text-transform: uppercase;
+      white-space: nowrap;
+  }
+
+  /*----- TIMELINE MARKER -----*/
+
+  .timeline-marker {
+      position: absolute;
+      top: 0; 
+      bottom: 0; 
+      left: 0;
+      width: 10px;
+   }
+
+   .timeline-marker:before {
+          background: #9646ff88;
+          border: 3px solid transparent;
+          border-radius: 100%;
+          content: "";
+          display: block;
+          height: 50px;
+          position: absolute;
+          top: 4px; left: 0;
+          width: 50px;
+          transition: 0.3s ease-in-out;
+      }
+
+   .timeline-marker:after {
+          content: "";
+          width: 3px;
+          background: #CCD5DB;
+          display: block;
+          position: absolute;
+          top: 24px; bottom: 0; left: 6px;
+      }
+   
+   .timeline-item:last-child:after {
+         content: none;
+   }  
+
+  .timeline-item:hover .timeline-marker:before {
+      background: #9646ff88;
+      border: 3px solid #9646ff88;
+  }
+
+  /*----- TIMELINE CONTENT -----*/
+
+  .timeline-content {
+      padding-bottom: 40px;
+  }
+  .timeline-content p:last-child {
+      margin-bottom: 0;
+   }
+
+   .timeline-content p{
+      margin-top: 20px;
+   }
+
+   .timeline-content h4{
+      color:#474747;
+   }
+
+   .timeline-marker:before {
+         background: transparent;
+         border-color:#9646ff88;
+         margin-left: -180%;
+   }
+
+   .timeline-item:hover .timeline-marker:before {
+         background: #9646ff88;
+   }

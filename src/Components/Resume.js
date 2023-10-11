@@ -29,12 +29,21 @@ class Resume extends Component {
     const work = this.props.data.work.map(function (work) {
       return (
         <div key={work.company}>
-          <h3>{work.company}</h3>
-          <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
-          </p>
-          <p>{work.description}</p>
+          <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>{work.years}</span>
+                    </div>
+                    <div class="timeline-marker">
+                      <img src={work.logo}></img>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">{work.company}</h3>
+                        <h4 class="timeline-position">{work.title}</h4>
+                        <p>{work.description}</p>
+                    </div>
+                </li>
+            </ul>
         </div>
       );
     });
@@ -98,7 +107,6 @@ class Resume extends Component {
           {work}
         </div>
     </div>
-
 
       <div className="row topic">
          <div className="three columns header-col">

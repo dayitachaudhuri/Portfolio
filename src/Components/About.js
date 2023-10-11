@@ -4,15 +4,8 @@ class About extends Component {
   render() {
 
     if(this.props.data){
-      var name = this.props.data.name;
-      var bio = this.props.data.bio;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone= this.props.data.phone;
-      var email = this.props.data.email;
-      var resumeDownload = this.props.data.resumedownload;
+      var bio1 = this.props.data.bio_line1;
+      var bio2 = this.props.data.bio_line2;
     }
 
     return (
@@ -25,8 +18,9 @@ class About extends Component {
          </div>
          <div className="seven columns main-col">
             <div class="about-text">
-            <h1>About Me</h1><br />
-            <p class="text">{bio}</p>   
+            <h1><span class="wave">👋</span> Hi There!</h1>
+            <p class="text">{bio1}</p>
+            <p class="text">{bio2}</p>      
             <br />
             <button href="https://drive.google.com/file/d/1KLGwoUn9cHL8Gvkp226xAXo9tx-Elwxf/view?usp=sharing" class="btn" >
             <a href="https://drive.google.com/file/d/1KLGwoUn9cHL8Gvkp226xAXo9tx-Elwxf/view?usp=sharing" >Download Resume</a></button>
