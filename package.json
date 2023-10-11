@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "http://dayitachaudhuri.github.io/Portfolio",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
