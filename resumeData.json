@@ -1,10 +1,10 @@
 {
   "main": {
     "name": "Dayita Chaudhuri",
-    "occupation": "technology enthusiast",
     "description": "I am a Second-Year CSE Undergrad and a full stack web developer. I use React, Angular and Django frameworks to develop pages. This is my resume. Feel free to check it out and leave me your opinion through the contact section.",
     "image": "profilepic.jpg",
-    "bio": "Full Stack Web-Developer and Software Developer with a passion for thoughtful UI/UX and collaboration. I am familiar with a variety of frameworks. Currently working on Machine Learning and AI. My primary goal is to make products that will make a difference.",
+    "bio_line1": "I am a Software Developer with a passion for thoughtful innovation and an undying love for cat memes🐱. I love to experiment with technology and I am familiar with a variety of different frameworks👨🏻‍💻. I have experience of working with some of the biggest names in the industry.",
+    "bio_line2": "My ultimate goal is to utilise my experience and skillset to make a positive impact in the world of technology🌐. I am open to collaborations and all kinds of opportunities. If you feel that you have somthing mutually beneficial for us, please ping me through any of my socials! Please scroll down to get a brief about my skills and experiences.⬇️",
     "contactmessage": "Are you interested in working with me, or do you just wanna meet up for some chitchat? I love meeting and working with new people. Hit me up through the form below.",
     "email": "dayitachaudhuri.tech@gmail.com",
     "phone": "+91 7005485912",
@@ -66,9 +66,17 @@
     ],
     "work": [
       {
+        "company": "Google",
+        "title": "Application Engineer Intern",
+        "years": "May 2023 - August 2023",
+        "logo": "./images/google.png",
+        "description": "Worked on a platform to enable proactive, automated monitoring of critical supply chaindata. Developed an end-to-end module to manage goals and configurations that are leveraged by the monitoring and alerting system workflow. Worked with Angular, Java, Boq and Apps Framework among other internal tools. Also performed extensive testing of both frontend and backend components using JUnit and Jasmine."
+      },
+      {
         "company": "Infinity Foundation",
         "title": "Web Development Intern",
-        "years": "December 2021 - Present",
+        "years": "December 2021 - March 2022",
+        "logo": "./images/inf.png",
         "description": "Used web technologies and coordinated with an experienced team to build web solutions for teh comany as well as other partner institutions. Got to interact with and learn from professionals working in the field of Software Development for 10+ years."
       }
     ],
